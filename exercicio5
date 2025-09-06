@@ -1,0 +1,51 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+  GDB online is an online compiler and debugger tool for C, C++, Python, PHP, Ruby, 
+  C#, OCaml, VB, Perl, Swift, Prolog, Javascript, Pascal, COBOL, HTML, CSS, JS
+  Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <stdio.h>
+
+int main()
+{
+	int cargo = 0;  /*cria a variavel inteira cargo*/
+	int nmr = 0;    /*cria a variavel inteira mnr*/
+	int p = 0;      /*cria a variavel inteira p*/
+
+	printf("Tabela de Cargo: \n1 - Auxiliar de escritório \n2 - Secretário(a) \n3 - Cozinheiro(a) \n4 - Entregador(a) \nInfome seu cargo: "); /*mostra no treminal uma tabela*/
+	scanf("%d", &cargo);    /*salva a resposta na variavel cargo*/
+	printf("Informe o salário atual: ");    /*printa no treminal uma frase*/
+	scanf("%d", &nmr);  /*salva a resposta na variavel mnr*/
+	p = (nmr/100);  /*p é igual a divisao de nmr por 100*/
+	
+	switch(cargo) { /*abrindo estrutura de escolha*/
+	    case (1):   /*caso 1 entao*/
+	    
+	    printf("Seu salário reajustado é %d R$", p*7 + nmr); /*printa no treminal uma frase*/
+	    break;  /*fecha caso*/
+	    
+	    case (2):   /*caso 2 entao*/
+	    
+	    printf("Seu salário reajustado é %d R$", p*9 + nmr);    /*printa no treminal uma frase*/
+	    break;  /*fecha o caso*/
+	    
+	    case (3):   /*caso 3 entao*/
+	    
+	    printf("Seu salário reajustado é %d R$", p*5 + nmr);    /*printa no treminal uma frase*/
+	    break;  /*fecha o caso*/
+	    
+	    case (4):   /*caso 4 entap*/
+	    
+	    printf("Seu salário reajustado é %d R$", p*12 + nmr);   /*printa no treminal uma frase*/
+	    break;      /*fecha o caso*/
+	    
+	    default:    /*se nenhum caso entao*/
+	    printf("\nCodigo Inválido\n");  /*printa no treminal uma frase*/
+	    return 0;
+	    
+	}
+	return 0;
+
+}

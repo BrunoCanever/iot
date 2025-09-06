@@ -1,0 +1,34 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+  GDB online is an online compiler and debugger tool for C, C++, Python, PHP, Ruby, 
+  C#, OCaml, VB, Perl, Swift, Prolog, Javascript, Pascal, COBOL, HTML, CSS, JS
+  Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <stdio.h>
+
+int main()
+{
+    int numero1, numero2;   /*criando as variaveis inteiras numero1 e numero 2*/
+    
+    printf("Digite o primeiro número: ");   /*mostrando na tela uma mensagem*/
+    scanf("%d", &numero1);                  /*salvando o que foi escrito pelo usuario*/
+    
+    printf("Digite o segundo número: ");    /*mostrando na tela uma mensagem*/  
+    scanf("%d", &numero2);                  /*salvando o que foi escrito pelo usuario*/                
+    
+    int total = numero1 + numero2;          /*a variavel inteira total é*/
+    
+    if (total > 10) {                       /*se total é maior que 10*/
+        
+        printf("A soma total dos valores e: " "%d", total); /*mostra no terminal o valor de total*/
+        
+    } else {    /*se nao*/
+        
+        printf("Erro, soma dos números é menor que 10, sendo apenas: " "%d", total );   /*mostra no terminal que é menor que 10 ou deu erro*/
+        
+    }
+
+    return 0;
+}

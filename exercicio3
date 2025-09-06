@@ -1,0 +1,45 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+  GDB online is an online compiler and debugger tool for C, C++, Python, PHP, Ruby, 
+  C#, OCaml, VB, Perl, Swift, Prolog, Javascript, Pascal, COBOL, HTML, CSS, JS
+  Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <stdio.h>
+
+int main()  
+{
+    int salario;    /*criando a variavel inteira salario*/
+    
+    printf("Digite o seu salário: ");   /*printando mensagem no terminal*/
+    scanf("%d", &salario);  /*salvando o que o usuario digitou na variavel salario*/
+    
+    if (salario <= 600) {   /*se salario é igual ou menor a 600 entao*/
+        
+        printf("Seu desconto é Insento");   /*printa no terminal uma frase*/
+        
+    } else {    /*se nao*/
+        
+        if (salario > 600 && salario <= 1200) { /*se salario for maior que 600 e menor ou igual a 1200 entao*/
+            
+            printf("Seu desconto é de %d R$", (salario/100)*20);    /*printa no terminal uma frase*/
+            
+        } else {    /*se nao*/
+            
+            if (salario > 1200 && salario <= 2000) {    /*se salario for maior que 1200 e menor ou igual a 2000 entao*/
+                
+                printf("Seu desconto é de %d R$", (salario/100)*25);    /*printa no terminal uma frase*/
+                
+            } else {    /*se nao*/
+                
+                if (salario > 2000) { /*se salario é igual ou maior que 2000 entao*/
+                    
+                    printf("Seu desconto é de %d R$", (salario/100)*30);    /*printa no terminal uma frase*/
+                    
+                }
+            }
+        }
+    }
+    return 0;
+}

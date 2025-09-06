@@ -1,0 +1,34 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+  GDB online is an online compiler and debugger tool for C, C++, Python, PHP, Ruby, 
+  C#, OCaml, VB, Perl, Swift, Prolog, Javascript, Pascal, COBOL, HTML, CSS, JS
+  Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+int main()
+{
+    int idade;  /*criando a variavel idade como inteira*/
+    
+    printf("Digite a sua idade: "); /*mostrando no terminal uma mensagem*/
+    scanf("%d", &idade);            /*salvando o que foi escrito pelo usuario na variavel*/
+    
+    if (idade >= 65) {              /*se a variavel idade for maior ou igual a 65*/
+        
+        printf("Você é um idoso, possuindo %d anos", idade);    /*printa no treminal que a pessoa é idosa*/
+
+    } else {    /*se nao*/
+        
+        if (idade >= 18) {  /*se a variavel idade for maior ou igual a 18*/
+            
+            printf("Você é maior de idade, possuindo %d anos", idade); /*printa no treminal que a pessoa é maior de idade*/
+            
+        } else { /*se nao*/
+            
+            printf("Você é menor de idade, possuindo %d anos", idade); /*printa no terminal que a pessoa é menor de idade*/
+            
+        }
+    }
+
+    return 0;
+}
